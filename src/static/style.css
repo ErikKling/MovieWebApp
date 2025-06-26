@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(145, 242, 199);
+}
+
+.container {
+    height: 100px;
+    background-color: rgb(25, 239, 214);
+    font-weight: bold;
+    font-size: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-size-adjust: 40px;
+}
+
+nav .logo {
+  text-decoration: none;
+  color: black
+}
+
+.card {
+    padding: 40px;
+}
+
+.user_card {
+    width: 180px;
+    height: 280px;
+    background-color: whitesmoke;
+    border-radius: 0px 80px 0px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.viewmovies {
+    margin-bottom: 60px;
+    height: 30px;
+    background-color: darkgreen;
+    color: rgb(145, 242, 199);
+    border-radius: 5px;
+}
+
+.user_card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
