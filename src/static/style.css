@@ -15,35 +15,102 @@ body {
 }
 
 nav .logo {
-  text-decoration: none;
-  color: black
+    text-decoration: none;
+    color: black;
 }
 
 .card {
     padding: 40px;
 }
 
+/* Gemeinsames Layout für User- und Movie-Cards */
 .user_card {
     width: 180px;
-    height: 280px;
     background-color: whitesmoke;
-    border-radius: 0px 80px 0px 80px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 20px;
     transition: box-shadow 0.3s ease;
+    text-align: center;
 }
 
+.user_card img {
+    max-width: 100%;
+    max-height: 180px;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+.user_card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Startseite: User-Buttons */
 .viewmovies {
-    margin-bottom: 60px;
+    margin-top: auto;
     height: 30px;
     background-color: darkgreen;
     color: rgb(145, 242, 199);
     border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 
-.user_card:hover {
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+/* Form für neuen User */
+.new_user {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Liste mit User- oder Movie-Cards */
+.user_list,
+.movie_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Button zum Löschen */
+.delete-button {
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Movie hinzufügen Formular */
+.add_movie_form {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.add_movie_form input {
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.add_movie_form button {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: none;
+    background-color: darkgreen;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+/* Link zurück */
+.back-link {
+    text-align: center;
+    margin-top: 40px;
 }
